@@ -1,0 +1,255 @@
+   /* 
+==========================================================================
+ 4. HEADER                   
+==========================================================================
+*/
+
+#header-wrapper {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+#header-wrapper.header-on-scroll {
+    top: -91px;
+}
+#header-wrapper.header-on-scroll.slide-down{
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+}
+#header .nav-left .navbar-header {
+    float: left;
+}
+
+#header .nav-left .pi-nav {
+    float: left;
+}
+.navbar{
+
+	margin-bottom: 0;
+}
+#header .navbar-default {
+    
+    border-color: #fff;
+    background-color: #fff;
+}
+
+#header .navbar-default .navbar-collapse,
+#header .navbar-default .navbar-form {
+    border: 0px solid transparent;
+    border-color: #fff;
+
+}
+
+#header .navbar-default .navbar-nav > .open > a,
+#header .navbar-default .navbar-nav > .open > a:hover,
+#header .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: #FBA301;
+}
+
+#header .navbar-collapse {
+    padding: 0;
+    float: right;
+}
+
+#header .navbar-default.pi-mega {
+    background: none;
+    border: 0px solid transparent;
+}
+#header .navbar-nav.pi-nav > li > a {
+    line-height: 59px;
+}
+
+#header .navbar-default .navbar-nav > li > a {
+    border: none;
+    border-top: 2px solid transparent;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #636363;
+}
+
+#header .navbar-default .navbar-nav > .current-menu-item > a,
+#header .navbar-default .navbar-nav > li > a:hover,
+#header .navbar-default .navbar-nav > li > a:focus {
+    border-top: 2px solid;
+    color: #FBA301;
+}
+
+#header .pi-mm-list > li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+#header .pi-mm-list > li > a {
+    color: #959595;
+    display: block;
+    padding: 15px 40px 15px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#header .pi-mm-list > li > a:hover,
+#header .pi-mm-list > li > a:focus {
+    background: #fafafa;
+}
+#header .pi-mm-list > li > a:after {
+    position: absolute;
+    font-family: FontAwesome;
+    top: 18px;
+    font-size: 10px;
+    right: 30px;
+    line-height: 19px;
+    content: "\f0da";
+    color: #959595;
+}
+
+#header.dark .pi-mm-list > li > a:hover,
+#header.dark .pi-mm-list > li > a:focus {
+    background: #363636;
+}
+#header .pi-mm-list > li:last-child > a {
+    border-bottom: none !important;
+}
+
+#header .pi-mm-list > li h6 {
+    color: #363636;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 20px 15px;
+    border-bottom: 1px solid #eee;
+}
+#header.dark .pi-mm-list > li h6 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 20px 15px;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#header .dropdown-menu {
+    background: #fff;
+    padding: 0 0;
+    border: none;
+    border-radius: 0;
+    min-width: 270px;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+#header .dropdown-menu > li > a {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 40px 15px 25px;
+    border-bottom: 1px solid #eee;
+    border-left: 2px solid transparent;
+}
+#header .dropdown-menu > li > a:hover {
+    background: #fafafa;
+    border-left: 2px solid;
+}
+#header .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+}
+#header .dropdown.dropdown-submenu > a:after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    content: "\f0da";
+    display: block;
+    top: 50%;
+    right: 25px;
+    color: #363636;
+    margin-top: -8px;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+#header.dark .dropdown-menu {
+    background: #252525;
+    border: none;
+    border-radius: 0;
+    min-width: 270px;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+#header.dark .dropdown-menu > li > a {
+    color: #FBA301;
+    border-bottom: 1px solid #3C3C3C;
+}
+#header .dropdown-menu > li > a .fa,
+#header.dark .dropdown-menu > li > a .fa {
+    margin-right: 15px;
+}
+#header.dark .dropdown-menu > li > a:hover{
+    background: #363636;
+    border-left: 2px solid;
+}
+#header.dark .pi-mm-list > li > a{
+    color: #A0A0A0;
+    border-bottom: 1px solid #3C3C3C;
+}
+#header.dark .pi-mm-list > li > a:after {
+    position: absolute;
+    font-family: FontAwesome;
+    top: 18px;
+    font-size: 10px;
+    right: 30px;
+    line-height: 19px;
+    content: "\f0da";
+}
+#header.dark .dropdown.dropdown-submenu > a:after {
+    color: #A0A0A0;
+}
+#header.dark #top-bar-wrapper {
+    background-color: #252525;
+}
+#header.dark #top-bar-wrapper #top-bar a,
+#header.dark #top-bar-wrapper #top-bar span {
+    color: #a0a9b1;
+}
+#header .pi-mm-list > li > h7,
+#header.dark .pi-mm-list > li > h7{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 40px 15px 25px;
+    margin-bottom: 0;
+}
+#header .pi-mm-list > li > h7 {
+    color: #636363;
+    border-bottom: 1px solid #eee;
+}
+#header.dark .pi-mm-list > li > h7 {
+    color: #fff;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+.logo {
+    margin: 15px 0;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #1B1B1B;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #FBA301;
+}
